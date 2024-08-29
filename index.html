@@ -1,14 +1,1628 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MailerBro - Simplify Your Email Marketing</title>
+    <meta name="description"
+        content="MailerBro: The ultimate email marketing platform for businesses of all sizes. Simplify your campaigns, boost engagement, and drive results.">
+    <meta name="keywords" content="email marketing, email campaigns, marketing automation, newsletter, email templates">
+    <meta name="author" content="MailerBro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.mailerbro.com">
+    <meta property="og:title" content="MailerBro - Simplify Your Email Marketing">
+    <meta property="og:description"
+        content="MailerBro: The ultimate email marketing platform for businesses of all sizes. Simplify your campaigns, boost engagement, and drive results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mailerbro.com">
+    <meta property="og:image" content="https://www.mailerbro.com/images/og-image.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4A90E2',
+                        'secondary': '#F5A623',
+                        'accent': '#50E3C2',
+                        'dark': '#333333',
+                        'light': '#F8F8F8'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden] {
+            display: none
+        }
+
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        .container {
+            width: 100%
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0
+        }
+
+        .fixed {
+            position: fixed
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .inset-0 {
+            inset: 0px
+        }
+
+        .bottom-0 {
+            bottom: 0px
+        }
+
+        .left-0 {
+            left: 0px
+        }
+
+        .right-0 {
+            right: 0px
+        }
+
+        .left-4 {
+            left: 1rem
+        }
+
+        .right-4 {
+            right: 1rem
+        }
+
+        .top-1\/2 {
+            top: 50%
+        }
+
+        .z-0 {
+            z-index: 0
+        }
+
+        .z-10 {
+            z-index: 10
+        }
+
+        .z-50 {
+            z-index: 50
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mx-1 {
+            margin-left: 0.25rem;
+            margin-right: 0.25rem
+        }
+
+        .mb-10 {
+            margin-bottom: 2.5rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+
+        .ml-2 {
+            margin-left: 0.5rem
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mr-4 {
+            margin-right: 1rem
+        }
+
+        .mt-8 {
+            margin-top: 2rem
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem
+        }
+
+        .block {
+            display: block
+        }
+
+        .inline-block {
+            display: inline-block
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .inline-flex {
+            display: inline-flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .h-16 {
+            height: 4rem
+        }
+
+        .h-full {
+            height: 100%
+        }
+
+        .h-6 {
+            height: 1.5rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .h-3 {
+            height: 0.75rem
+        }
+
+        .h-5 {
+            height: 1.25rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .w-6 {
+            width: 1.5rem
+        }
+
+        .w-auto {
+            width: auto
+        }
+
+        .w-16 {
+            width: 4rem
+        }
+
+        .w-3 {
+            width: 0.75rem
+        }
+
+        .w-5 {
+            width: 1.25rem
+        }
+
+        .max-w-3xl {
+            max-width: 48rem
+        }
+
+        .flex-shrink-0 {
+            flex-shrink: 0
+        }
+
+        .-translate-y-1\/2 {
+            --tw-translate-y: -50%;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .space-x-8> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(2rem * var(--tw-space-x-reverse));
+            margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-y-1> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.25rem * var(--tw-space-y-reverse))
+        }
+
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-y-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-md {
+            border-radius: 0.375rem
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .rounded {
+            border-radius: 0.25rem
+        }
+
+        .border {
+            border-width: 1px
+        }
+
+        .border-t {
+            border-top-width: 1px
+        }
+
+        .border-gray-200 {
+            --tw-border-opacity: 1;
+            border-color: rgb(229 231 235 / var(--tw-border-opacity))
+        }
+
+        .border-transparent {
+            border-color: transparent
+        }
+
+        .border-gray-700 {
+            --tw-border-opacity: 1;
+            border-color: rgb(55 65 81 / var(--tw-border-opacity))
+        }
+
+        .bg-light {
+            --tw-bg-opacity: 1;
+            background-color: rgb(248 248 248 / var(--tw-bg-opacity))
+        }
+
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+        }
+
+        .bg-blue-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(37 99 235 / var(--tw-bg-opacity))
+        }
+
+        .bg-yellow-400 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(250 204 21 / var(--tw-bg-opacity))
+        }
+
+        .bg-gray-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+        }
+
+        .bg-gray-300 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(209 213 219 / var(--tw-bg-opacity))
+        }
+
+        .bg-blue-500 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(59 130 246 / var(--tw-bg-opacity))
+        }
+
+        .bg-gray-800 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(31 41 55 / var(--tw-bg-opacity))
+        }
+
+        .bg-gradient-to-br {
+            background-image: linear-gradient(to bottom right, var(--tw-gradient-stops))
+        }
+
+        .bg-gradient-to-t {
+            background-image: linear-gradient(to top, var(--tw-gradient-stops))
+        }
+
+        .from-blue-600 {
+            --tw-gradient-from: #2563eb var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .from-white {
+            --tw-gradient-from: #fff var(--tw-gradient-from-position);
+            --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+        }
+
+        .to-blue-800 {
+            --tw-gradient-to: #1e40af var(--tw-gradient-to-position)
+        }
+
+        .to-transparent {
+            --tw-gradient-to: transparent var(--tw-gradient-to-position)
+        }
+
+        .fill-current {
+            fill: currentColor
+        }
+
+        .object-cover {
+            object-fit: cover
+        }
+
+        .p-2 {
+            padding: 0.5rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+
+        .py-16 {
+            padding-top: 4rem;
+            padding-bottom: 4rem
+        }
+
+        .py-3 {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem
+        }
+
+        .px-2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem
+        }
+
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem
+        }
+
+        .px-5 {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .py-12 {
+            padding-top: 3rem;
+            padding-bottom: 3rem
+        }
+
+        .pb-3 {
+            padding-bottom: 0.75rem
+        }
+
+        .pt-2 {
+            padding-top: 0.5rem
+        }
+
+        .pt-4 {
+            padding-top: 1rem
+        }
+
+        .pt-8 {
+            padding-top: 2rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .font-sans {
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .text-dark {
+            --tw-text-opacity: 1;
+            color: rgb(51 51 51 / var(--tw-text-opacity))
+        }
+
+        .text-blue-600 {
+            --tw-text-opacity: 1;
+            color: rgb(37 99 235 / var(--tw-text-opacity))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity))
+        }
+
+        .text-gray-400 {
+            --tw-text-opacity: 1;
+            color: rgb(156 163 175 / var(--tw-text-opacity))
+        }
+
+        .text-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(75 85 99 / var(--tw-text-opacity))
+        }
+
+        .text-gray-700 {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity))
+        }
+
+        .text-gray-800 {
+            --tw-text-opacity: 1;
+            color: rgb(31 41 55 / var(--tw-text-opacity))
+        }
+
+        .text-blue-100 {
+            --tw-text-opacity: 1;
+            color: rgb(219 234 254 / var(--tw-text-opacity))
+        }
+
+        .text-blue-900 {
+            --tw-text-opacity: 1;
+            color: rgb(30 58 138 / var(--tw-text-opacity))
+        }
+
+        .text-yellow-400 {
+            --tw-text-opacity: 1;
+            color: rgb(250 204 21 / var(--tw-text-opacity))
+        }
+
+        .opacity-20 {
+            opacity: 0.2
+        }
+
+        .opacity-10 {
+            opacity: 0.1
+        }
+
+        .shadow-md {
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .transition {
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .transition-transform {
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .transition-colors {
+            transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .duration-300 {
+            transition-duration: 300ms
+        }
+
+        .ease-in-out {
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+        }
+
+        .hover\:scale-105:hover {
+            --tw-scale-x: 1.05;
+            --tw-scale-y: 1.05;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+
+        .hover\:bg-blue-700:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(29 78 216 / var(--tw-bg-opacity))
+        }
+
+        .hover\:bg-gray-100:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+        }
+
+        .hover\:bg-gray-50:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(249 250 251 / var(--tw-bg-opacity))
+        }
+
+        .hover\:bg-yellow-500:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(234 179 8 / var(--tw-bg-opacity))
+        }
+
+        .hover\:bg-blue-600:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(37 99 235 / var(--tw-bg-opacity))
+        }
+
+        .hover\:text-gray-500:hover {
+            --tw-text-opacity: 1;
+            color: rgb(107 114 128 / var(--tw-text-opacity))
+        }
+
+        .hover\:text-gray-900:hover {
+            --tw-text-opacity: 1;
+            color: rgb(17 24 39 / var(--tw-text-opacity))
+        }
+
+        .hover\:text-blue-400:hover {
+            --tw-text-opacity: 1;
+            color: rgb(96 165 250 / var(--tw-text-opacity))
+        }
+
+        .hover\:shadow-lg:hover {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .focus\:outline-none:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+
+        .focus\:ring-2:focus {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+        }
+
+        .focus\:ring-inset:focus {
+            --tw-ring-inset: inset
+        }
+
+        .focus\:ring-blue-500:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity))
+        }
+
+        .focus\:ring-yellow-500:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgb(234 179 8 / var(--tw-ring-opacity))
+        }
+
+        .focus\:ring-opacity-50:focus {
+            --tw-ring-opacity: 0.5
+        }
+
+        .focus\:ring-offset-2:focus {
+            --tw-ring-offset-width: 2px
+        }
+
+        @media (min-width: 640px) {
+            .sm\:px-3 {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem
+            }
+
+            .sm\:px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem
+            }
+        }
+
+        @media (min-width: 768px) {
+            .md\:block {
+                display: block
+            }
+
+            .md\:flex {
+                display: flex
+            }
+
+            .md\:hidden {
+                display: none
+            }
+
+            .md\:w-1\/2 {
+                width: 50%
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr))
+            }
+
+            .md\:py-24 {
+                padding-top: 6rem;
+                padding-bottom: 6rem
+            }
+
+            .md\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem
+            }
+
+            .md\:text-5xl {
+                font-size: 3rem;
+                line-height: 1
+            }
+
+            .md\:text-xl {
+                font-size: 1.25rem;
+                line-height: 1.75rem
+            }
+
+            .md\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:w-1\/3 {
+                width: 33.333333%
+            }
+
+            .lg\:grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr))
+            }
+
+            .lg\:px-8 {
+                padding-left: 2rem;
+                padding-right: 2rem
+            }
+
+            .lg\:text-3xl {
+                font-size: 1.875rem;
+                line-height: 2.25rem
+            }
+
+            .lg\:text-6xl {
+                font-size: 3.75rem;
+                line-height: 1
+            }
+        }
+    </style>
 </head>
 
-<body>
-    <p>hello world </p>
+<body class="font-sans bg-light text-dark">
+    <header-component>
+        <header class="fixed w-full z-50 bg-white shadow-md">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <a href="#" class="flex items-center">
+                            <img src="https://static.vecteezy.com/system/resources/previews/000/275/642/original/modern-minimal-vector-logo-for-banner.jpg"
+                                alt="MailerBro Logo" class="h-8 w-auto">
+                            <span class="ml-2 text-xl font-bold text-gray-800">MailerBro</span>
+                        </a>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                        <a href="#how-it-works" class="text-gray-600 hover:text-gray-900">How It Works</a>
+                        <a href="#pricing" class="text-gray-600 hover:text-gray-900">Pricing</a>
+                        <a href="#testimonials" class="text-gray-600 hover:text-gray-900">Testimonials</a>
+                        <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                    </nav>
+
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <a href="#signup"
+                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Sign Up
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button type="button"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                            aria-expanded="false" id="mobile-menu-button">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Heroicon name: outline/menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#features"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+                    <a href="#how-it-works"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">How
+                        It Works</a>
+                    <a href="#pricing"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                    <a href="#testimonials"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Testimonials</a>
+                    <a href="#faq"
+                        class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">FAQ</a>
+                </div>
+                <div class="pt-4 pb-3 border-t border-gray-200">
+                    <div class="flex items-center px-5">
+                        <a href="#signup"
+                            class="block w-full px-5 py-3 text-center font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header-component>
+
+    <main>
+        <hero-section>
+            <section id="hero-section"
+                class="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white overflow-hidden">
+                <div class="absolute inset-0 z-0">
+                    <img src="https://static.vecteezy.com/system/resources/previews/001/228/721/non_2x/blue-gradient-with-dynamic-blended-line-design-vector.jpg"
+                        alt="Abstract background" class="object-cover w-full h-full opacity-20">
+                </div>
+                <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h1
+                            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate__animated animate__fadeInDown">
+                            Unleash Your Email Marketing Potential
+                        </h1>
+                        <h2
+                            class="text-xl md:text-2xl lg:text-3xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+                            100,000 Contacts • Unlimited Daily Credits • AI-Powered Flyer Creation
+                        </h2>
+                        <p class="text-lg md:text-xl mb-10 animate__animated animate__fadeInUp animate__delay-2s">
+                            MailerBro: The all-in-one platform for seamless email campaigns and stunning AI-generated
+                            flyers.
+                        </p>
+                        <a href="#"
+                            class="inline-block bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg animate__animated animate__bounceIn animate__delay-3s">
+                            Get Started Free
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent"></div>
+            </section>
+        </hero-section>
+        <features-section>
+            <section id="features-section" class="bg-gray-100 py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold text-center mb-12">Key Features of MailerBro</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Feature 1: Large contact list capacity -->
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <img src="https://www.designyourway.net/blog/wp-content/uploads/2010/11/1945307.jpg"
+                                alt="Large contact list icon" class="w-16 h-16 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Large Contact List</h3>
+                            <p class="text-gray-600">Manage up to 100,000 contacts with ease</p>
+                        </div>
+
+                        <!-- Feature 2: Unlimited daily emailing credits -->
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <img src="https://images.template.net/wp-content/uploads/2017/02/02224028/Flat-Minimal-Icons.jpg?width=480"
+                                alt="Unlimited emailing icon" class="w-16 h-16 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Unlimited Emailing</h3>
+                            <p class="text-gray-600">Send as many emails as you need, every day</p>
+                        </div>
+
+                        <!-- Feature 3: AI-powered flyer creation -->
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <img src="https://masterbundles.com/wp-content/uploads/2020/09/masterbundles-2.jpg"
+                                alt="AI-powered flyer creation icon" class="w-16 h-16 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-2">AI Flyer Creation</h3>
+                            <p class="text-gray-600">Create stunning flyers with AI assistance</p>
+                        </div>
+
+                        <!-- Feature 4: Cost savings -->
+                        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                            <img src="https://www.designyourway.net/diverse/5/minicons/2096336.jpg"
+                                alt="Cost savings icon" class="w-16 h-16 mx-auto mb-4">
+                            <h3 class="text-xl font-semibold mb-2">Cost Savings</h3>
+                            <p class="text-gray-600">Reduce expenses on design and marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </features-section>
+        <how-it-works-section></how-it-works-section>
+        <pricing-section></pricing-section>
+        <testimonials-section>
+            <section id="testimonials-section" class="bg-gray-100 py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+
+                    <div class="relative">
+                        <!-- Testimonials Carousel -->
+                        <div class="overflow-hidden">
+                            <div class="flex transition-transform duration-300 ease-in-out" id="testimonials-carousel">
+                                <!-- Testimonial 1 -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 px-4 flex-shrink-0">
+                                    <div class="bg-white rounded-lg shadow-md p-6">
+                                        <div class="flex items-center mb-4">
+                                            <img src="path_to_image_1" alt="Sarah Johnson"
+                                                class="w-16 h-16 rounded-full mr-4 object-cover">
+                                            <div>
+                                                <h3 class="font-semibold text-lg">Sarah Johnson</h3>
+                                                <p class="text-gray-600">Marketing Director, TechCorp</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-700 mb-4">"MailerBro has revolutionized our email marketing
+                                            efforts. The intuitive interface and powerful analytics have helped us
+                                            increase our open rates by 30%!"</p>
+                                        <div class="flex text-yellow-400">
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 px-4 flex-shrink-0">
+                                    <div class="bg-white rounded-lg shadow-md p-6">
+                                        <div class="flex items-center mb-4">
+                                            <img src="path_to_image_2" alt="Michael Chen"
+                                                class="w-16 h-16 rounded-full mr-4 object-cover">
+                                            <div>
+                                                <h3 class="font-semibold text-lg">Michael Chen</h3>
+                                                <p class="text-gray-600">E-commerce Owner, StyleHub</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-700 mb-4">"The automation features in MailerBro have saved
+                                            us countless hours. Our email campaigns are now more targeted and effective
+                                            than ever before."</p>
+                                        <div class="flex text-yellow-400">
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 3 -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 px-4 flex-shrink-0">
+                                    <div class="bg-white rounded-lg shadow-md p-6">
+                                        <div class="flex items-center mb-4">
+                                            <img src="path_to_image_3" alt="Emily Rodriguez"
+                                                class="w-16 h-16 rounded-full mr-4 object-cover">
+                                            <div>
+                                                <h3 class="font-semibold text-lg">Emily Rodriguez</h3>
+                                                <p class="text-gray-600">Nonprofit Coordinator, GreenEarth</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-gray-700 mb-4">"As a nonprofit, every dollar counts. MailerBro's
+                                            affordable pricing and powerful features have helped us reach more donors
+                                            and increase our impact."</p>
+                                        <div class="flex text-yellow-400">
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <button id="prev-testimonial"
+                            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md focus:outline-none">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </button>
+                        <button id="next-testimonial"
+                            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md focus:outline-none">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Dot Indicators -->
+                    <div class="flex justify-center mt-8">
+                        <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 focus:outline-none"
+                            data-index="0"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 focus:outline-none"
+                            data-index="1"></button>
+                        <button class="w-3 h-3 rounded-full bg-gray-300 mx-1 focus:outline-none"
+                            data-index="2"></button>
+                    </div>
+                </div>
+            </section>
+        </testimonials-section>
+        <faq-section></faq-section>
+        <cta-section>
+            <section id="cta-section" class="relative bg-gradient-to-br from-blue-600 to-blue-800 py-16 md:py-24">
+                <div class="absolute inset-0 z-0 opacity-10">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/664/710/original/vector-abstract-technology-background-hi-tech-communication-digital-background.jpg"
+                        alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="container mx-auto px-4 relative z-10">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2
+                            class="text-4xl md:text-5xl font-bold text-white mb-6 animate__animated animate__fadeInDown">
+                            Boost Your Email Marketing Today!</h2>
+                        <p class="text-xl md:text-2xl text-blue-100 mb-8 animate__animated animate__fadeInUp">Start your
+                            14-day free trial and experience the power of MailerBro</p>
+                        <div class="mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+                            <button
+                                class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-50"
+                                aria-label="Sign up for free trial">
+                                Start Free Trial
+                            </button>
+                        </div>
+                        <div class="text-blue-100 animate__animated animate__fadeInUp animate__delay-2s">
+                            <p class="text-lg mb-2">Limited Time Offer!</p>
+                            <div id="countdown-timer" class="text-3xl font-bold" aria-label="Countdown timer">
+                                <span id="days">00</span>:<span id="hours">00</span>:<span id="minutes">00</span>:<span
+                                    id="seconds">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </cta-section>
+    </main>
+
+    <footer-component>
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#features" class="hover:text-blue-400 transition-colors">Features</a></li>
+                            <li><a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a></li>
+                            <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                            <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                        <p class="mb-2">
+                            <a href="mailto:info@mailerbro.com" class="hover:text-blue-400 transition-colors">
+                                <i class="fas fa-envelope mr-2"></i>info@mailerbro.com
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+1234567890" class="hover:text-blue-400 transition-colors">
+                                <i class="fas fa-phone mr-2"></i>+1 (234) 567-890
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" aria-label="Facebook" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-facebook-f text-2xl"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-linkedin-in text-2xl"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="hover:text-blue-400 transition-colors">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Stay Updated</h3>
+                        <form class="flex flex-col space-y-2">
+                            <input type="email" placeholder="Enter your email" aria-label="Email for newsletter"
+                                class="p-2 rounded text-gray-800">
+                            <button type="submit"
+                                class="bg-blue-500 hover:bg-blue-600 transition-colors py-2 px-4 rounded">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copyright Notice -->
+                <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                    <p>© 2024 MailerBro.com. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </footer-component>
+
+    <script src="./components/cta-section.js" type="javascript"></script>
+    <script src="./components/features-section.js" type="javascript"></script>
+    <script src="./components/footer-component.js" type="javascript"></script>
+    <script src="./components/header-component.js" type="javascript"></script>
+    <script src="./components/hero-section.js" type="javascript"></script>
+    <script src="./components/testimonials-section.js" type="javascript"></script>
+    <script src="./components/how-it-works-section.js"></script>
+    <script src="./components/pricing-section.js"></script>
+    <script src="./components/faq-section.js"></script>
+
 </body>
 
 </html>
